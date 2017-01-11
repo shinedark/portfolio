@@ -1,0 +1,110 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+
+
+
+body {
+  	margin: 0;
+  	padding: 0;
+  	font-family: 'Bungee', cursive;
+}
+
+h1{
+	padding-top: 20px;
+	font-family: 'Monoton', cursive;
+}
+
+ul {
+    display: block;
+    list-style-type: none;
+}
+
+a {
+  color: black;
+}
+
+p {
+	font-size: 1.5em;
+}
+
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  color: white;
+  height: 83px;
+  background-color: black;
+  background-size: contain;
+  font-size: 1.5em;
+}
+
+.App-header:hover {
+  background-image: url(../images/tv.gif);
+  background-repeat: round;
+  text-decoration: line-through;
+}
+
+
+.hard {
+  color: gold;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-family: 'Monoton', cursive;
+}
+
+section.am {
+    padding-top: 10px;
+}
+
+.picalog {
+  background-image: url(../images/Alog.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 190px;
+}
+
+.picsampler {
+  background-image: url(../images/samplerdj.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 190px;
+}
+
+.picsvisualizer {
+  background-image: url(../images/visualizer.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 190px;
+}
+
+.textl{
+  font-size: 1em;
+  padding: 10px;
+}
+
+.footer {
+  height: 50px;
+  border-top-style: solid;
+}
+
+.icons { 
+  padding: 0;
+  color: black;
+  display: inline-flex;
+}
+.icons > li {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1.25rem 5px;
+    padding: 0.625rem 0;
+}
+
+.fa {
+	font-size: x-large;
+}
+
+
