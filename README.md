@@ -1,3 +1,0 @@
-# portfolio
-# cp
-# camilopineda
