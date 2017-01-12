@@ -14,7 +14,7 @@ h1{
 }
 
 ul {
-    display: block;
+    display: inline-block;
     list-style-type: none;
 }
 
@@ -54,7 +54,8 @@ p {
 }
 
 section.am {
-    padding-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .picalog {
@@ -81,14 +82,61 @@ section.am {
   height: 190px;
 }
 
+.ido {
+  background-image: url(../images/ido.png);
+  background-size: contain;
+  background-position: center;
+  height: 190px;
+  display: none;
+}
+
+.cont{ 
+  font-family: 'Monoton', cursive;
+  display: none;
+  font-size: 3em;
+
+}
+
 .textl{
   font-size: 1em;
   padding: 10px;
 }
 
+.ca {
+  display: none;
+}
+
+
+.what {
+    display: inline-flex;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.box1{
+  border-spacing: 30px;
+  border-style: solid;
+  padding: 10px;
+  margin: 10px;
+}
+
+.box2{
+  border-spacing: 30px;
+  border-style: solid;
+  padding: 10px;
+  margin: 10px;
+}
+
+.box3{
+  border-spacing: 30px;
+  border-style: solid;
+  padding: 10px;
+  margin: 10px;
+}
+
 .footer {
   height: 50px;
-  border-top-style: solid;
+
 }
 
 .icons { 
