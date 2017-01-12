@@ -37,6 +37,16 @@ p {
   background-color: black;
   background-size: contain;
   font-size: 1.5em;
+  animation: pulse 9s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: black;
+  }
+  100% {
+   background-image: url(../images/tv.gif); 
+  }
 }
 
 .App-header:hover {
@@ -120,6 +130,11 @@ section.am {
   margin: 10px;
 }
 
+.box1:hover {
+  background-image: url(../images/gif.gif);
+  background-repeat: no-repeat;
+}
+
 .box2{
   border-spacing: 30px;
   border-style: solid;
@@ -127,11 +142,21 @@ section.am {
   margin: 10px;
 }
 
+.box2:hover {
+  background-image: url(../images/gif.gif);
+  background-repeat: no-repeat;
+}
+
 .box3{
   border-spacing: 30px;
   border-style: solid;
   padding: 10px;
   margin: 10px;
+}
+
+.box3:hover {
+  background-image: url(../images/gif.gif);
+  background-repeat: no-repeat;
 }
 
 .footer {
