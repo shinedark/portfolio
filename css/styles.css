@@ -18,6 +18,7 @@ ul {
     list-style-type: none;
 }
 
+
 a {
   color: black;
 }
@@ -37,17 +38,8 @@ p {
   background-color: black;
   background-size: contain;
   font-size: 1.5em;
-  animation: pulse 9s infinite;
 }
 
-@keyframes pulse {
-  0% {
-    background-color: black;
-  }
-  100% {
-   background-image: url(../images/tv.gif); 
-  }
-}
 
 .App-header:hover {
   background-image: url(../images/tv.gif);
@@ -67,6 +59,8 @@ section.am {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
+
 
 .picalog {
   background-image: url(../images/Alog.png);
