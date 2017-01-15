@@ -21,6 +21,7 @@ ul {
 
 a {
   color: black;
+
 }
 
 p {
@@ -33,25 +34,17 @@ p {
 
 
 .App-header {
-  color: white;
   height: 83px;
-  background-color: black;
   background-size: contain;
   font-size: 1.5em;
 }
 
 
-.App-header:hover {
-  background-image: url(../images/tv.gif);
-  background-repeat: round;
-  text-decoration: line-through;
-}
-
 
 .hard {
   color: gold;
   margin-top: 3px;
-  margin-bottom: 3px;
+  margin-bottom: 39px;
   font-family: 'Monoton', cursive;
 }
 
@@ -68,6 +61,8 @@ section.am {
   background-repeat: no-repeat;
   background-position: center;
   height: 190px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .picsampler {
@@ -76,6 +71,8 @@ section.am {
   background-repeat: no-repeat;
   background-position: center;
   height: 190px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .picsvisualizer {
@@ -84,6 +81,8 @@ section.am {
   background-repeat: no-repeat;
   background-position: center;
   height: 190px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .ido {
@@ -114,8 +113,20 @@ section.am {
 .what {
     display: inline-flex;
     padding-bottom: 30px;
-    padding-top: 30px;
 }
+
+.al{
+    padding-bottom: 30px;
+}
+
+.vi{
+    padding-bottom: 30px;
+}
+
+.sam{
+    padding-bottom: 30px;
+}
+
 
 .box1{
   border-spacing: 30px;
@@ -125,8 +136,8 @@ section.am {
 }
 
 .box1:hover {
-  background-image: url(../images/gif.gif);
-  background-repeat: no-repeat;
+  background-color: lightgrey;
+  
 }
 
 .box2{
@@ -137,8 +148,7 @@ section.am {
 }
 
 .box2:hover {
-  background-image: url(../images/gif.gif);
-  background-repeat: no-repeat;
+  background-color: lightgrey;
 }
 
 .box3{
@@ -149,8 +159,7 @@ section.am {
 }
 
 .box3:hover {
-  background-image: url(../images/gif.gif);
-  background-repeat: no-repeat;
+ background-color: lightgrey;
 }
 
 .footer {
@@ -173,5 +182,6 @@ section.am {
 .fa {
 	font-size: x-large;
 }
+
 
 
