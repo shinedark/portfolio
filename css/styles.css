@@ -39,11 +39,26 @@ div {
   }
 }
 
+ul.h {
+    display: inline-flex;
+}
 
 .App-header {
   font-size: 1.5em;
 }
 
+.hi{
+  animation-delay: 1.5s;
+}
+
+.ho{
+  animation-delay: .5s;
+}
+
+
+span.ho {
+    padding: 9px;
+}
 
 
 .hard {
@@ -51,7 +66,7 @@ div {
   margin-top: 3px;
   margin-bottom: 39px;
   font-family: 'Monoton', cursive;
-  animation-delay: 2s;
+  animation-delay: 3s;
 }
 
 section.am {
@@ -168,10 +183,6 @@ section.am {
  background-color: lightgrey;
 }
 
-.footer {
-  height: 50px;
-
-}
 
 .icons { 
   padding: 0;
@@ -180,7 +191,6 @@ section.am {
 }
 .icons > li {
     width: 2.5rem;
-    height: 2.5rem;
     margin: 1.25rem 5px;
     padding: 0.625rem 0;
 }
