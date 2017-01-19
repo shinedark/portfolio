@@ -3,14 +3,14 @@
 
 
 body {
-  	margin: 0;
-  	padding: 0;
-  	font-family: 'Bungee', cursive;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bungee', cursive;
 }
 
 h1{
-	padding-top: 20px;
-	font-family: 'Monoton', cursive;
+  padding-top: 20px;
+  font-family: 'Monoton', cursive;
   
 }
 
@@ -26,7 +26,7 @@ a {
 }
 
 p {
-	font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 div {
@@ -40,6 +40,8 @@ div {
 }
 
 ul.h {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
 }
 
@@ -48,11 +50,13 @@ ul.h {
 }
 
 .hi{
-  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 .ho{
-  animation-delay: .5s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 
 
@@ -66,7 +70,8 @@ span.ho {
   margin-top: 3px;
   margin-bottom: 39px;
   font-family: 'Monoton', cursive;
-  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 section.am {
@@ -132,6 +137,8 @@ section.am {
 
 
 .what {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     padding-bottom: 30px;
 }
@@ -187,6 +194,8 @@ section.am {
 .icons { 
   padding: 0;
   color: black;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 .icons > li {
@@ -196,8 +205,6 @@ section.am {
 }
 
 .fa {
-	font-size: x-large;
+  font-size: x-large;
 }
-
-
 
