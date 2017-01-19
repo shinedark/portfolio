@@ -4,6 +4,14 @@ $(document).ready(function() {
       function(){
         $(this).removeClass('animated bounce');
       });
+  $('.hi').addClass('animated rotateIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+      function(){
+        $(this).removeClass('animated rotateIn');
+      });
+  $('.ho').addClass('animated rotateOut').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+      function(){
+        $(this).removeClass('animated rotateOut');
+      });
   $('.hard').addClass('animated hinge').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
       function(){
         $(this).removeClass('animated hinge');
