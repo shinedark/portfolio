@@ -12,15 +12,11 @@ $(document).ready(function() {
       function(){
         $(this).removeClass('animated rotateOut');
       });
-  $('.hard').addClass('animated hinge').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
-      function(){
-        $(this).removeClass('animated hinge');
-      });
 
     $('.box1').click(function(){
-      $('.ca ').addClass('animated rollIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+      $('.ca ').addClass('animated fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
       function(){
-        $(this).removeClass('animated rollIn');
+        $(this).removeClass('animated fadeInUp');
       });
       $('.ca ').show();
       $('.ido ').hide();
@@ -32,9 +28,9 @@ $(document).ready(function() {
     });
 
     $('.box2').click(function(){
-      $('.ido ').addClass('animated rollIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+      $('.ido ').addClass('animated fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
       function(){
-        $(this).removeClass('animated rollIn');
+        $(this).removeClass('animated fadeInUp');
       });
       $('.ido ').show();
       $('.ca ').hide();
@@ -46,9 +42,9 @@ $(document).ready(function() {
     });
 
     $('.box3').click(function(){
-       $('.cont ').addClass('animated rollIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+       $('.cont ').addClass('animated fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
       function(){
-        $(this).removeClass('animated rollIn');
+        $(this).removeClass('animated fadeInUp');
       });
       $('.cont ').show();
       $('.ca ').hide();
