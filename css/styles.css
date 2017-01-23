@@ -37,6 +37,22 @@ div {
   .am {
     display: none;
   }
+
+  div.cont {
+      font-size: 1.3em;
+    }
+    ul {
+    display: inline;
+    }
+    h1{
+      font-size: 1.6em;
+    }
+    
+
+    .ido {
+    background-repeat: no-repeat;
+    background-size: 250px;
+    }
 }
 
 ul.h {
