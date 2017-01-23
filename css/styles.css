@@ -15,7 +15,7 @@ h1{
 }
 
 ul {
-    display: inline-block;
+    display: flex;
     list-style-type: none;
 }
 
@@ -45,6 +45,7 @@ ul.h {
     display: inline-flex;
 }
 
+
 .App-header {
   font-size: 1.5em;
 }
@@ -64,14 +65,19 @@ span.hu {
     padding: 9px;
 }
 
+p.hard {
+    height: 293px;
+    background-position: center;
+}
 
 .hard {
   color: gold;
   margin-top: 3px;
   margin-bottom: 39px;
   font-family: 'Monoton', cursive;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  background-image: url(../images/farmercam.png);
+  background-size: 169px;
+  background-repeat: no-repeat;
 }
 
 section.am {
@@ -144,16 +150,16 @@ section.am {
 }
 
 .al{
-    padding-bottom: 30px;
+      flex: 1;
 }
 
 .vi{
-    padding-bottom: 30px;
+       flex: 1;
 }
 
 .sam{
-    padding-bottom: 30px;
-}
+        flex: 1;
+    }
 
 
 .box1{

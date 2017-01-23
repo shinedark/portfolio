@@ -21,10 +21,12 @@ $(document).ready(function() {
       $('.ca ').show();
       $('.ido ').hide();
       $('.cont ').hide();
+      $('.hard ').hide();
 
     });
     $('.container').click(function(){
       $('.ca').hide();
+      $('.hard ').show();
     });
 
     $('.box2').click(function(){
@@ -35,10 +37,12 @@ $(document).ready(function() {
       $('.ido ').show();
       $('.ca ').hide();
       $('.cont ').hide();
+      $('.hard ').hide();
 
     });
     $('.container').click(function(){
       $('.ido').hide();
+      $('.hard ').show();
     });
 
     $('.box3').click(function(){
@@ -49,10 +53,12 @@ $(document).ready(function() {
       $('.cont ').show();
       $('.ca ').hide();
       $('.ido ').hide();
+      $('.hard ').hide();
 
     });
     $('.container').click(function(){
       $('.cont').hide();
+      $('.hard ').show();
     });
 
 });
