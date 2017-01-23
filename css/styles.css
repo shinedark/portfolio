@@ -200,14 +200,17 @@ p.idoo {
 
 .al{
       flex: 1;
+      padding: 10px;
 }
 
 .vi{
        flex: 1;
+       padding: 10px;
 }
 
 .sam{
         flex: 1;
+        padding: 10px;
     }
 
 
