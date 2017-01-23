@@ -35,8 +35,12 @@ p {
 
 
 @media screen and (max-width: 500px){
-  .am {
-    display: none;
+  ul.what{
+    display: block;
+    float: initial;
+  }
+  p.hard{
+    font-size: 3em;
   }
 
   div.cont {
@@ -187,8 +191,7 @@ p.idoo {
 
 
 .what {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
+    
     display: inline-flex;
     float: right;
     padding-right: 33px;
