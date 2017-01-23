@@ -10,7 +10,10 @@ body {
 
 h1{
   padding-top: 20px;
-  font-family: 'Monoton', cursive;
+  font-size: 1.2em;
+  text-align: initial;
+  width: 30%;
+  padding-left: 33px;
   
 }
 
@@ -29,9 +32,7 @@ p {
   font-size: 1.5em;
 }
 
-div {
-  text-align: center;
-}
+
 
 @media screen and (max-width: 500px){
   .am {
@@ -48,22 +49,24 @@ div {
       font-size: 1.6em;
     }
     
-
-    .ido {
-    background-repeat: no-repeat;
-    background-size: 250px;
-    }
 }
 
 ul.h {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+ul.ca {
+    padding-bottom: 100px;
 }
 
 
 .App-header {
   font-size: 1.5em;
+
 }
 
 .hi{
@@ -81,26 +84,34 @@ span.hu {
     padding: 9px;
 }
 
-p.hard {
-    height: 293px;
-    background-position: center;
-}
 
 .hard {
-  color: gold;
-  margin-top: 3px;
-  margin-bottom: 39px;
+  color: white;
   font-family: 'Monoton', cursive;
-  background-image: url(../images/farmercam.png);
-  background-size: 169px;
-  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 6em;
 }
 
 section.am {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 133px;
+    padding-bottom: 133px;
+    text-align: center;
+    background-image: url(../images/modular.jpg);
 }
 
+section.mo {
+    padding-top: 133px;
+    padding-bottom: 133px;
+    text-align: center;
+    background-image: url(../images/moo.jpg);
+}
+
+section.ma {
+    text-align: center;
+    font-size: x-large;
+    padding-top: 30px;
+    color: white;
+}
 
 
 .picalog {
@@ -133,17 +144,33 @@ section.am {
   margin-bottom: 12px;
 }
 
-.ido {
+
+.pic {
   background-image: url(../images/ido.png);
   background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
-  height: 190px;
-  display: none;
+  height: 530px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.ido {
+ padding-top: 100px;
+
+}
+
+h2.ido {
+    font-size: 2em;
+}
+
+p.idoo {
+    padding-top: 33px;
 }
 
 .cont{ 
-  font-family: 'Monoton', cursive;
-  display: none;
+
+ 
   font-size: 3em;
 
 }
@@ -153,8 +180,9 @@ section.am {
   padding: 10px;
 }
 
-.ca {
-  display: none;
+.container {
+    text-align: center;
+    padding-top: 100px;
 }
 
 
@@ -162,7 +190,9 @@ section.am {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    padding-bottom: 30px;
+    float: right;
+    padding-right: 33px;
+
 }
 
 .al{
@@ -180,7 +210,7 @@ section.am {
 
 .box1{
   border-spacing: 30px;
-  border-style: solid;
+  
   padding: 10px;
   margin: 10px;
 }
@@ -192,7 +222,7 @@ section.am {
 
 .box2{
   border-spacing: 30px;
-  border-style: solid;
+ 
   padding: 10px;
   margin: 10px;
 }
@@ -203,7 +233,7 @@ section.am {
 
 .box3{
   border-spacing: 30px;
-  border-style: solid;
+ 
   padding: 10px;
   margin: 10px;
 }
@@ -212,10 +242,19 @@ section.am {
  background-color: lightgrey;
 }
 
+.cont1 {
+    padding-top: 30px;
+    font-size: 2em;
+}
+
+section.pro {
+    font-size: 3em;
+    padding-bottom: 51px;
+}
 
 .icons { 
   padding: 0;
-  color: black;
+  color: white;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -230,3 +269,8 @@ section.am {
   font-size: x-large;
 }
 
+footer.footer {
+    text-align: center;
+    background-color: black;
+    background: rgb(218, 218, 218);
+}
