@@ -272,7 +272,7 @@ section.pro {
   width: 300px;
   height: 300px;
   transform-style: preserve-3d;
-  animation: example 23s linear infinite;
+  animation: example 19s linear infinite;
 }
 
 .cube:hover {
@@ -310,7 +310,9 @@ section.pro {
 }
 
 @keyframes example {
-  100% { transform: rotateX(360deg); }
+  100% { transform: rotateX(360deg) rotateY(90deg); }
+  
+
 }
 
 
