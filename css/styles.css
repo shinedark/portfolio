@@ -166,6 +166,8 @@ section.ma {
 
 h2.ido {
     font-size: 2em;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 p.idoo {
@@ -174,7 +176,7 @@ p.idoo {
 
 .cont{ 
 
- 
+  padding-top: 160px; 
   font-size: 3em;
 
 }
@@ -258,6 +260,61 @@ section.pro {
     padding-bottom: 51px;
 }
 
+.scene {
+  width: 300px;
+  height: 300px;
+  margin: 75px auto 0;
+  perspective: 1200px;
+}
+
+.cube {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: example 23s linear infinite;
+}
+
+.cube:hover {
+  animation:paused;
+}
+
+.side {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  border: 5px solid #9aa;
+  background-color: rgba(32, 170, 151, 0.5);
+  padding: 120px 0;
+  font: 50px/1;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.back {
+  transform: translateZ(-150px);
+}
+.top {
+  transform: translateY(-150px) rotateX(90deg);
+}
+.bottom {
+  transform: translateY(150px) rotateX(90deg);
+}
+.front {
+  transform: translateZ(150px);
+}
+.top, .bottom {
+  background-color: rgba(105, 136, 190, 0.5)
+}
+
+@keyframes example {
+  100% { transform: rotateX(360deg); }
+}
+
+
+
 .icons { 
   padding: 0;
   color: white;
@@ -280,3 +337,12 @@ footer.footer {
     background-color: black;
     background: rgb(218, 218, 218);
 }
+
+
+
+
+
+
+
+
+
