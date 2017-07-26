@@ -186,6 +186,10 @@ p.idoo {
   padding: 10px;
 }
 
+.textl:hover{
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+}
+
 .container {
     text-align: center;
     padding-top: 100px;
