@@ -118,35 +118,18 @@ section.ma {
 }
 
 
-.picalog {
-  background-image: url(../images/Alog.png);
+.app {
+  background-image: url(../images/nm.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   height: 190px;
-  margin-top: 12px;
+  margin-top: 60px;
   margin-bottom: 12px;
+  text-align: center;
 }
 
-.picsampler {
-  background-image: url(../images/samplerdj.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 190px;
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
 
-.picsvisualizer {
-  background-image: url(../images/visualizer.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 190px;
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
 
 
 .pic {
@@ -204,33 +187,29 @@ p.idoo {
 
 }
 
-.al{
-      flex: 1;
-      padding: 10px;
-}
-
-.vi{
-       flex: 1;
-       padding: 10px;
-}
-
-.sam{
-        flex: 1;
-        padding: 10px;
-    }
-
 
 .box1{
   border-spacing: 30px;
-  
   padding: 10px;
   margin: 10px;
+  font-size: 25px
+}
+
+.box12{
+  border-spacing: 30px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 25px
 }
 
 .box1:hover {
   background-color: lightgrey;
-  
 }
+
+h3 {
+    padding-top: 180px;
+}
+
 
 .box2{
   border-spacing: 30px;
@@ -321,6 +300,12 @@ section.pro {
 
 p.prp {
     padding-bottom: 100px;
+
+}
+
+.prp2 {
+    padding-top: 225px;
+    text-align: center;
 
 }
 
