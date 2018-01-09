@@ -15,7 +15,7 @@ $(document).ready(function() {
 
   $('.box1').click(function(){
     $('html, body').animate({
-            scrollTop: $(".pro").offset().top
+            scrollTop: $(".app").offset().top
         }, 2000);
    
   });
