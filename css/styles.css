@@ -117,6 +117,19 @@ section.ma {
     color: white;
 }
 
+section.stuff {
+    display: block;
+    text-align: center;
+}
+
+p.infop {
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+.app:hover, .app2:hover, .app3:hover, p.infop:hover {
+    background-color: rgba(149, 236, 228, 0.57);
+}
 
 .app {
   background-image: url(../images/nm.png);
@@ -127,9 +140,35 @@ section.ma {
   margin-top: 60px;
   margin-bottom: 12px;
   text-align: center;
+  display: inline-block;
+  padding: 30px;
 }
 
+.app2 {
+  background-image: url(../images/icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 190px;
+  margin-top: 60px;
+  margin-bottom: 12px;
+  text-align: center;
+  display: inline-block;
+  padding: 30px;
+}
 
+.app3 {
+  background-image: url(../images/vz.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 190px;
+  margin-top: 60px;
+  margin-bottom: 12px;
+  text-align: center;
+  display: inline-block;
+  padding: 30px;
+}
 
 
 .pic {
@@ -169,9 +208,6 @@ p.idoo {
   padding: 10px;
 }
 
-.textl:hover{
-  font: normal 100%/normal Arial, Helvetica, sans-serif;
-}
 
 .container {
     text-align: center;
