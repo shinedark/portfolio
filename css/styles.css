@@ -127,7 +127,7 @@ p.infop {
     padding-top: 15px;
 }
 
-.app:hover, .app2:hover, .app3:hover, p.infop:hover {
+.app:hover, .app2:hover, .app3:hover, .app4:hover, p.infop:hover {
     background-color: rgba(149, 236, 228, 0.57);
 }
 
@@ -159,6 +159,19 @@ p.infop {
 
 .app3 {
   background-image: url(../images/vz.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 190px;
+  margin-top: 60px;
+  margin-bottom: 12px;
+  text-align: center;
+  display: inline-block;
+  padding: 30px;
+}
+
+.app4 {
+  background-image: url(../images/samplerdj-loaded.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
