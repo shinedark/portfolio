@@ -127,7 +127,7 @@ p.infop {
     padding-top: 15px;
 }
 
-.app:hover, .app2:hover, .app3:hover, .app4:hover, p.infop:hover {
+.app:hover, .app2:hover, .app3:hover, .app4:hover , .app5:hover, p.infop:hover {
     background-color: rgba(149, 236, 228, 0.57);
 }
 
@@ -183,6 +183,18 @@ p.infop {
   padding: 30px;
 }
 
+.app5 {
+  background-image: url(../images/icon.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 190px;
+  margin-top: 60px;
+  margin-bottom: 12px;
+  text-align: center;
+  display: inline-block;
+  padding: 30px;
+}
 
 .pic {
   background-image: url(../images/ido.png);
