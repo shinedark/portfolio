@@ -196,6 +196,19 @@ p.infop {
   padding: 30px;
 }
 
+.app6 {
+  background-image: url(../images/sdm.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 190px;
+  margin-top: 60px;
+  margin-bottom: 12px;
+  text-align: center;
+  display: inline-block;
+  padding: 30px;
+}
+
 .pic {
   background-image: url(../images/ido.png);
   background-size: contain;
