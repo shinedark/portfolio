@@ -127,7 +127,7 @@ p.infop {
     padding-top: 15px;
 }
 
-.app:hover, .app2:hover, .app3:hover, .app4:hover , .app5:hover, p.infop:hover {
+.app:hover, .app2:hover, .app3:hover, .app4:hover , .app5:hover, .app6:hover, p.infop:hover {
     background-color: rgba(149, 236, 228, 0.57);
 }
 
