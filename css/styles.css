@@ -104,14 +104,26 @@ ul.ca {
        padding: 20px;
        font-size: 1em;
    }
-   a.start {
+   .start {
        font-size: 30px;
        margin: 50px;
        padding-top: 30px;
-       padding-right: 65px;
+       /*padding-right: 65px;*/
        padding-left: 65px;
        position: absolute;
    }
+
+   a {
+       text-align: center;
+       color: black;
+       padding-left: 15px;
+       /* padding-right: 30px; */
+   }
+
+   .apps{
+     display: none;
+     padding-right: 0px;
+  }
 
   .icons { 
     float: none;
