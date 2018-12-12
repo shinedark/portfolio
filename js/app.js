@@ -6,6 +6,7 @@ function init() {
 
   camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 10 );
   camera.position.z = 1;
+  camera.translateZ( window.innerWidth / window.innerHeight );
 
   scene = new THREE.Scene();
 
@@ -25,7 +26,7 @@ function init() {
     material = new THREE.MeshBasicMaterial({map:texture});
 
 
-    for (var i = 0; i < 5000; i++) {
+    for (var i = 0; i < 9000; i++) {
 
         var x = Math.random() * 50 - 25;
         var y = Math.random() * 50 - 25;
