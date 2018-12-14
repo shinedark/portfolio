@@ -1,12 +1,18 @@
 var camera, scene, renderer;
-var  video, geometry, material, mesh, texture, mergedGeometry;
-
+var  video, geometry, geometry2, material,  material2, mesh, texture, mergedGeometry;
+var controls;
+var snow, flakeCount, flakeArray, flakeMesh, flakeGeometry;
 
 function init() {
 
-  camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 10 );
-  camera.position.z = 1;
-  camera.translateZ( window.innerWidth / window.innerHeight );
+  camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
+  controls = new THREE.OrbitControls( camera );
+  camera.position.z = 100;
+  controls.rotateSpeed = 2.0;
+  controls.zoomSpeed = 5;
+  controls.panSpeed = 2;
+  controls.enableZoom = true;
+  controls.update();
 
   scene = new THREE.Scene();
 
@@ -21,27 +27,28 @@ function init() {
     texture.minFilter = THREE.LinearFilter;
     texture.magFilter = THREE.LinearFilter;
     texture.format = THREE.RGBFormat;
-    geometry = new THREE.BoxGeometry( 0.6, 0.6, 0.6 );
-    mergedGeometry = new THREE.Geometry();
-    material = new THREE.MeshBasicMaterial({map:texture});
+    geometry2 = new THREE.BoxGeometry( 23, 23, 23 );
+    material2 = new THREE.MeshBasicMaterial({map:texture});
+    flakeCount = 9000;
+    flakeGeometry = new THREE.BoxGeometry( 0.3, 0.3, 0.3 );
+    flakeMaterial = new THREE.MeshBasicMaterial({map:texture});
+    snow = new THREE.Group();
+    mesh = new THREE.Mesh( geometry2, material2 );
+    mesh.position.y = 10.8;
+    mesh.position.x =  60;
 
-
-    for (var i = 0; i < 9000; i++) {
-
-        var x = Math.random() * 50 - 25;
-        var y = Math.random() * 50 - 25;
-        var z = Math.random() * 50 - 25;
-
-        geometry.translate(x, y, z);
-
-        mergedGeometry.merge(geometry);
-
-        geometry.translate(-x, -y, -z);
+    for (let i = 0; i < flakeCount; i++) {
+      var flakeMesh = new THREE.Mesh(flakeGeometry, flakeMaterial);
+      flakeMesh.position.set(
+        (Math.random() + 0.9) * 10,
+        (Math.random() - 0.6) * 100,
+        (Math.random() - 0.9) * 10
+      );
+      snow.add(flakeMesh);
     }
+    scene.add(snow, mesh);
 
-
-  mesh = new THREE.Mesh( mergedGeometry, material );
-  scene.add( mesh);
+    flakeArray = snow.children;
 
   renderer = new THREE.WebGLRenderer( { antialias: true} );
   renderer.setSize( window.innerWidth, window.innerHeight );
@@ -53,9 +60,31 @@ function init() {
 function animate() {
 
   requestAnimationFrame( animate );
+  
+  for (i = 0; i < flakeArray.length / 2; i++) {
+     flakeArray[i].rotation.y += 0.01;
+     flakeArray[i].rotation.x += 0.02;
+     flakeArray[i].rotation.z += 0.03;
+     flakeArray[i].position.y -= 1;
+     if (flakeArray[i].position.y < -6) {
+       flakeArray[i].position.y += 100;
+     }
+   }
+   for (i = flakeArray.length / 2; i < flakeArray.length; i++) {
+     flakeArray[i].rotation.y -= 0.02;
+     flakeArray[i].rotation.x -= 0.03;
+     flakeArray[i].rotation.z -= 0.02;
+     flakeArray[i].position.y -= 0.1;
+     if (flakeArray[i].position.y < -6) {
+       flakeArray[i].position.y += 35;
+     }
 
-  mesh.rotation.x += 0.001;
-  mesh.rotation.y += 0.002;
+     snow.rotation.y -= 0.0000009;
+   }
+
+
+
+  controls.update();
 
   renderer.render( scene, camera );
 
@@ -92,6 +121,7 @@ $(document).ready(function() {
         animate();
         $( ".start" ).hide( "slow", function() {
           $(".apps").show();
+
         });
       });
 

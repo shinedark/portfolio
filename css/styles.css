@@ -13,8 +13,7 @@ a{
   text-align: center;
   color: black;
   padding-left: 30px;
-  padding-right: 30px;
-}
+ }
 
 a:hover {
   background-color: lightgrey;
@@ -84,6 +83,7 @@ ul.ca {
 }
 .icons > li {
     margin: 1.25rem 5px;
+    padding-right: 30px;
 }
 
 .fa {
