@@ -12,7 +12,7 @@ function init() {
   controls.zoomSpeed = 5;
   controls.panSpeed = 2;
   controls.enableZoom = true;
-  controls.update();
+  
 
   scene = new THREE.Scene();
 
@@ -129,6 +129,10 @@ $(document).ready(function() {
       $('.apps').click(function(){
         $('canvas').remove();
         $(".work").css("display", "block");
+        
+        console.log(controls);
+        controls.enable = false;
+        controls.enableZoom = false;
       });
 });
 
