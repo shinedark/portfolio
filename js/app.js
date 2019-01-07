@@ -3,17 +3,18 @@ var  video, geometry, geometry2, material,  material2, mesh, texture, mergedGeom
 var controls;
 var snow, flakeCount, flakeArray, flakeMesh, flakeGeometry;
 
+
 function init() {
 
   camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
   controls = new THREE.OrbitControls( camera );
-  camera.position.z = 100;
-  controls.rotateSpeed = 2.0;
+  camera.position.z = (Math.random() + 1) * 50;
+  controls.rotateSpeed = 1.0;
   controls.zoomSpeed = 5;
   controls.panSpeed = 2;
   controls.enableZoom = true;
   
-
+  
   scene = new THREE.Scene();
 
     video = document.getElementById( 'video' );
@@ -83,7 +84,7 @@ function animate() {
    }
 
 
-
+ 
   controls.update();
 
   renderer.render( scene, camera );
