@@ -20,7 +20,7 @@ function init() {
     video = document.getElementById( 'video' );
     video.autoplay  = true;
     video.loop  = true;
-    video.muted= true;
+    video.muted= false;
     video.load();
     video.play();
     texture = new THREE.VideoTexture( video );
