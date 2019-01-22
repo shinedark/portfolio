@@ -167,10 +167,10 @@ p.infop {
 }
 
 .app2 {
-  background-image: url(../assets/images/icon.png);
+  background-image: url(../assets/images/alog.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: unset;
   height: 190px;
   margin-top: 60px;
   margin-bottom: 12px;
