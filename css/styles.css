@@ -176,11 +176,11 @@ p.infop {
   margin-bottom: 12px;
   text-align: center;
   display: inline-block;
-  padding: 30px;
+  padding: 60px;
 }
 
 .app3 {
-  background-image: url(../assets/images/vz.png);
+  background-image: url(../assets/images/icon.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -190,10 +190,11 @@ p.infop {
   text-align: center;
   display: inline-block;
   padding: 30px;
+  padding-right: 60px;
 }
 
 .app4 {
-  background-image: url(../assets/images/Caddy.png);
+  background-image: url(../assets/images/clock.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -203,6 +204,7 @@ p.infop {
   text-align: center;
   display: inline-block;
   padding: 30px;
+  padding-right: 60px;
 }
 
 .app5 {
@@ -238,9 +240,12 @@ h3 {
 }
 
 h2 {
-    padding: 30px;
+    padding: 60px;
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
 }
 
+h2:hover {
+    background-color: #beeaf7;
+}
 
