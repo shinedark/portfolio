@@ -11,7 +11,8 @@ a{
   
   text-align: center;
   color: black;
-  padding-left: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
  }
 
 a:hover {
@@ -82,11 +83,12 @@ ul.ca {
 }
 .icons > li {
     margin: 1.25rem 5px;
-    padding-right: 30px;
+/*    padding-right: 30px;
+    padding-left: 30px;*/
 }
 
-.fa {
-  font-size: 30px;
+li.twitter {
+    font-size: 20px;
 }
 
 
@@ -115,7 +117,7 @@ ul.ca {
    a {
        text-align: center;
        color: black;
-       padding-left: 15px;
+       /*padding-left: 15px;*/
        /* padding-right: 30px; */
    }
 
@@ -166,18 +168,7 @@ p.infop {
   padding: 30px;
 }
 
-.app2 {
-  background-image: url(../assets/images/alog.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: unset;
-  height: 190px;
-  margin-top: 60px;
-  margin-bottom: 12px;
-  text-align: center;
-  display: inline-block;
-  padding: 60px;
-}
+
 
 .app3 {
   background-image: url(../assets/images/icon.png);
@@ -190,22 +181,8 @@ p.infop {
   text-align: center;
   display: inline-block;
   padding: 30px;
-  padding-right: 60px;
 }
 
-.app4 {
-  background-image: url(../assets/images/clock.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 190px;
-  margin-top: 60px;
-  margin-bottom: 12px;
-  text-align: center;
-  display: inline-block;
-  padding: 30px;
-  padding-right: 60px;
-}
 
 .app5 {
   background-image: url(../assets/images/r.jpg);
@@ -233,7 +210,9 @@ p.infop {
   padding: 30px;
 }
 
-
+.apps:hover {
+    background-color: lightgrey;
+}
 
 h3 {
     padding-top: 180px;
@@ -247,5 +226,14 @@ h2 {
 
 h2:hover {
     background-color: #beeaf7;
+}
+
+.expob:hover {
+    background-color: #beeaf7;
+}
+
+.expob {
+    margin-top: 60px;
+    padding-top: 0px;
 }
 
