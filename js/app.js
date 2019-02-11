@@ -4,6 +4,7 @@ var controls;
 var snow, flakeCount, flakeArray, flakeMesh, flakeGeometry;
 
 
+
 function init() {
 
   camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
@@ -82,8 +83,6 @@ function animate() {
 
      snow.rotation.y -= 0.0000009;
    }
-
-
  
   controls.update();
 
