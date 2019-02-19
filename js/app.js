@@ -125,6 +125,14 @@ $(document).ready(function() {
         });
       });
 
+      $('.twitter').mouseover(function(){
+          $('.textInfo').show("slow");
+      });
+
+      $('.twitter').mouseleave(function(){
+          $('.textInfo').hide("slow");
+      });
+
 
       $('.apps').click(function(){
         $('canvas').remove();
