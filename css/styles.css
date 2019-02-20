@@ -187,6 +187,18 @@ p.infop {
   padding: 30px;
 }
 
+.app2 {
+  background-image: url(../assets/images/alog.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 190px;
+  margin-top: 60px;
+  margin-bottom: 12px;
+  text-align: center;
+/*  display: inline-block;*/
+  padding: 30px
+}
 
 
 .app3 {
@@ -198,7 +210,7 @@ p.infop {
   margin-top: 60px;
   margin-bottom: 12px;
   text-align: center;
-/*  display: inline-block;*/
+  display: inline-block;
   padding: 30px;
 }
 
